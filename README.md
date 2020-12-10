@@ -4,6 +4,8 @@
 
 This is a coding environnement for recommender systems. It should be flexible enough to use it for other types of datasets, providing you put the data into the right format.
 
+See the **readme.ipynb** file for more information about my results about this coding challenge.
+
 ## Setup the environment
 
 Run the following commands in your development environment
