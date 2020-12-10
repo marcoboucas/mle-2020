@@ -32,11 +32,14 @@ class Items(BaseDB):
         if item_search.shape[0] == 0:
             raise ValueError("Item not found, id: % s" % item_id)
         item_info_all = item_search.loc[0].to_dict()
+        return self.convert_item(item_info_all)
 
+    def convert_item(self, raw_item: Dict[str, Any]) -> Item:
+        """Convert an item to the right dataformat."""
         # Put extra features into separate values
         item_info = {}
         extra_features = {}
-        for key, value in item_info_all.items():
+        for key, value in raw_item.items():
             if key in settings.ITEM_COLUMNS:
                 item_info[key] = value
             else:

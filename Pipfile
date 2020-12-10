@@ -16,6 +16,7 @@ pylint = "*"
 mypy = "*"
 flake8 = "*"
 marshmallow = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.7"

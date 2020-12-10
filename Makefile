@@ -1,4 +1,4 @@
-MODULE = content_based_filtering
+MODULE = recommender
 lint:
 	python -m pylint $(MODULE)
 	python -m flake8 $(MODULE)
