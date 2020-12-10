@@ -1,0 +1,15 @@
+[MASTER]
+ignore=tests
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=120
+
+
+[MESSAGES CONTROL]
+disable=bare-except,chained-comparison,R0801
+
+[BASIC]
+
+good-names=i,df,x,j,X_data,X_train,X_test,X_input,db,t
