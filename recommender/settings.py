@@ -2,9 +2,8 @@
 
 import os
 
-# pylint: disable=invalid-name
 
-
+# pylint: disable=invalid-name,too-few-public-methods
 class settings:
     """All the needed constants for the model."""
 
@@ -16,6 +15,12 @@ class settings:
 
     # Item DB
     ITEM_COLUMNS = ['item_id', 'name']
+    ITEM_FEATURES = [
+        'Animation', "Children's", 'Comedy', 'Adventure',
+        'Fantasy', 'Romance', 'Drama', 'Action', 'Crime',
+        'Thriller', 'Horror', 'Sci-Fi', 'Documentary', 'War',
+        'Musical', 'Mystery', 'Film-Noir', 'Western'
+    ]
 
     # Interaction DB
     INTERACTION_COLUMNS = ['user_id', 'item_id', 'score']

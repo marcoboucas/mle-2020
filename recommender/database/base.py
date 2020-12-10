@@ -3,6 +3,7 @@
 from typing import List
 import os
 
+import numpy as np
 import pandas as pd
 
 
@@ -27,3 +28,7 @@ class BaseDB():
                 raise KeyError(
                     'This column does not appear in the dataset (%s): %s' % (db_name, needed_column)
                 )
+
+    def get_features(self, features_names: List[str]) -> np.ndarray:
+        """Retrieve the features."""
+        return self.data[features_names].to_numpy()

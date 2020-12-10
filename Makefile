@@ -10,5 +10,5 @@ test:
 tests: test
 
 coverage:
-	coverage run --source=topic_modeling -m unittest discover -t . -s tests -v
+	coverage run --source=$(MODULE) -m unittest discover -t . -s tests -v
 	coverage report -m

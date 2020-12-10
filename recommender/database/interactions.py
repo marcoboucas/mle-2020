@@ -1,10 +1,8 @@
 """Interactions class."""
 
-from typing import Dict, Union
+
 import os
 from dataclasses import dataclass
-
-import pandas as pd
 
 from .base import BaseDB
 from ..settings import settings
@@ -12,6 +10,7 @@ from ..settings import settings
 
 @dataclass
 class Interaction(BaseDB):
+    """Interaction Schema."""
     user_id: int
     item_id: str
     score: float

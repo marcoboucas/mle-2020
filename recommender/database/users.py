@@ -1,11 +1,9 @@
 """Users class."""
 
-from typing import Dict, Union
+
 import os
 from dataclasses import dataclass
 
-
-import pandas as pd
 
 from .base import BaseDB
 from ..settings import settings
@@ -13,6 +11,7 @@ from ..settings import settings
 
 @dataclass
 class User:
+    """User Schema."""
     user_id: int
     gender: str
     age: int
