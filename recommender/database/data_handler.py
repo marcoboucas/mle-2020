@@ -43,7 +43,7 @@ class Database():
     def compute_similarity_items(self, similarity_function, items_features_columns: List[str]):
         """Compute the similarity between all the items."""
         t = time()
-        self.items.compute_similarity(similarity_function, items)
+        self.items.compute_similarity(similarity_function, items_features_columns)
         logging.info("Similarity computed ! (%s)", time() - t)
 
 

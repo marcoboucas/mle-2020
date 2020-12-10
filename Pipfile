@@ -17,6 +17,7 @@ mypy = "*"
 flake8 = "*"
 marshmallow = "*"
 coverage = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.7"

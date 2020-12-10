@@ -34,7 +34,7 @@ class Items(BaseDB):
         item_search = self.data[self.data['item_id'] == item_id]
         if item_search.shape[0] == 0:
             raise ValueError("Item not found, id: % s" % item_id)
-        item_info_all = item_search.loc[0].to_dict()
+        item_info_all = item_search.reset_index().loc[0].to_dict()
         return self.convert_item(item_info_all)
 
     def convert_item(self, raw_item: Dict[str, Any]) -> Item:
