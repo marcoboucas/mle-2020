@@ -16,3 +16,6 @@ class settings:
 
     # Item DB
     ITEM_COLUMNS = ['item_id', 'name']
+
+    # Interaction DB
+    INTERACTION_COLUMNS = ['user_id', 'item_id', 'score']
